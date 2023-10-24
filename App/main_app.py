@@ -14,7 +14,7 @@ st.markdown("Upload an image")
 # model = pickle.load(pickle_in)
   
 
-model = tf.keras.models.load_model("model")
+model = tf.keras.models.load_model("App/model")
 
 test_img = st.file_uploader("Choose a file...", type=["jpg", "jpeg", "png"])
 submit = st.button("Predict")
