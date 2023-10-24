@@ -27,6 +27,7 @@ if submit:
         test_image = test_image.convert("L")  
         test_image = np.array(test_image) / 255.0  
         test_image = np.expand_dims(test_image, 0) 
+        
         predictions = model.predict(test_image)
         predicted_digit = np.argmax(predictions)
 
